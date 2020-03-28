@@ -8,7 +8,7 @@ Header("Location: logout.php");
 }
 $queryemp = "SELECT * FROM tbl_member WHERE m_id=$m_id";
 $resultm = mysqli_query($condb, $queryemp) or die ("Error in query: $queryemp " . mysqli_error());
-$rowm = mysqli_fetch_array($resultm);
+$rowm = mysqli_fetch_array($resultm);  
 ?>
 <!DOCTYPE html>
 <html>
